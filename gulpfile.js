@@ -28,6 +28,17 @@ gulp.task('css', function() {
     .pipe(gulp.dest('./css'));
 });
 
+gulp.task('uncss', function() {
+    return gulp.src('css/tachyons.css')
+        .pipe(uncss({
+            html: ['index.html'],
+            ignore: [':hover', ':focus', ':link', ':active', ':visited']
+        }))
+        .pipe(minifyCSS())
+        .pipe(rename({ extname: '.stripped.css' }))
+        .pipe(gulp.dest('./css/'));
+});
+
 // Initialize browser-sync which starts a static server also allows for
 // browsers to reload on filesave
 gulp.task('browser-sync', function() {
