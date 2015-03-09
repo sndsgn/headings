@@ -46,6 +46,7 @@
     }
   ],
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "uncss": "gulp uncss"
   }
 }
