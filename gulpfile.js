@@ -6,9 +6,8 @@ var gulp = require('gulp'),
     basswork = require('gulp-basswork'),
     watch = require('gulp-watch'),
     prefix = require('gulp-autoprefixer'),
-    //uncss = require('gulp-uncss'),
+    uncss = require('gulp-uncss'),
     minifyCSS = require('gulp-minify-css'),
-    //sass = require('gulp-sass'),
     size = require('gulp-size'),
     rename = require('gulp-rename'),
     csslint = require('gulp-csslint'),
@@ -28,8 +27,6 @@ gulp.task('css', function() {
     .pipe(size({gzip: true, showFiles: true, title:'basswork minified'}))
     .pipe(gulp.dest('./css'));
 });
-
-gulp.task('generateDocs', require('./tasks/generateDocs'));
 
 // Initialize browser-sync which starts a static server also allows for
 // browsers to reload on filesave
