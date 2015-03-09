@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>
+      HEADINGS!
+    </title>
+    <meta name="author" content="@sndsgns">
+    <meta name="description" content="Simple CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/css/tachyons.min.css">
+    <style type="text/css" media="screen">
+      .outline h1,
+      .outline h2,
+      .outline h3,
+      .outline h4,
+      .outline h5,
+      .outline h6 { outline: 1px solid gold; }
+    </style>
+  </head>
+  <body class="wi-100">
+    <header  style="background-image: linear-gradient(180deg, #B8F8FF,
+      #B8FFF3);" class="black-80 pvx">
+      <h1 class="f2 mega-ns center tc mbxs mtn">HEADINGS</h1>
+      <h2 class="tc book f4 f3-l">Default stylings for HTML headings.</h2>
+    </header>
+    <main class="pam">
+      <div class="outline">
+        <h1>Default h1 size 2em</h1>
+        <h2>Default h2 size 1.5em</h2>
+        <h3>Default h3 size 1.17em</h3>
+        <h4>Default h4 size 1em</h4>
+        <h5>Default h5 size .83em</h5>
+        <h6>Default h6 size .67em</h6>
+      </div>
+      <h1>Nested &lt;h1&gt; elements</h1>
+      <section class="outline">
+        <p class="mw6 lh-copy" style="outline:0;">
+          If an h1 has a parent element of aside, article, aside, or section,
+          it will change the default font-size as shown below. Starts at 2em and
+          steps down to .67em.
+        </p>
+        <h1>Default h1 style nested once 1.5em</h1>
+        <section>
+          <h1>Default h1 style nested twice 1.17em</h1>
+            <section>
+              <h1>Default h1 style nested thrice 1em</h1>
+                <section>
+                  <h1>Default h1 style nested four times .83em</h1>
+                    <section>
+                      <h1>Default h1 style nested five times .67em</h1>
+                    </section>
+                </section>
+            </section>
+        </section>
+      </section>
+      <section class="pvm">
+        <h1>h1</h1>
+<pre>
+<code>
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-before: 0.67em;
+  margin-after: 0.67em;
+  margin-start: 0;
+  margin-end: 0;
+  font-weight: bold;
+}
+</code>
+</pre>
+<h1>h2</h1>
+<pre>
+<code>
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-before: 0.83em;
+  margin-after: 0.83em;
+  margin-start: 0;
+  margin-end: 0;
+  font-weight: bold;
+}
+</code>
+</pre>
+<h1>h3</h1>
+<pre>
+<code>
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-before: 1em;
+  margin-after: 1em;
+  margin-start: 0;
+  margin-end: 0;
+  font-weight: bold;
+}
+</code>
+</pre>
+<h1>h4</h1>
+<pre>
+<code>
+h4 {
+  display: block;
+  margin-before: 1.33em;
+  margin-after: 1.33em;
+  margin-start: 0;
+  margin-end: 0;
+  font-weight: bold;
+}
+</code>
+</pre>
+<h1>h5</h1>
+<pre>
+<code>
+h5 {
+  display: block;
+  font-size: .83em;
+  margin-before: 1.67em;
+  margin-after: 1.67em;
+  margin-start: 0;
+  margin-end: 0;
+  font-weight: bold;
+}
+</code>
+</pre>
+<h1>h6</h1>
+<pre>
+<code>
+h6 {
+  display: block;
+  font-size: .67em;
+  margin-before: 2.33em;
+  margin-after: 2.33em;
+  margin-start: 0;
+  margin-end: 0;
+  font-weight: bold;
+}
+</code>
+</pre>
+      </section>
+      <section>
+        <h1>Reference:</h1>
+        <ul class="list mln pln">
+          <li><a class="link db" href="http://www.w3.org/TR/html-markup/h1.html">HTML Spec h1</a></li>
+          <li><a class="link db" href="http://www.w3.org/TR/html-markup/h2.html">HTML Spec h2</a></li>
+          <li><a class="link db" href="http://www.w3.org/TR/html-markup/h3.html">HTML Spec h3</a></li>
+          <li><a class="link db" href="http://www.w3.org/TR/html-markup/h4.html">HTML Spec h4</a></li>
+          <li><a class="link db" href="http://www.w3.org/TR/html-markup/h5.html">HTML Spec h5</a></li>
+          <li><a class="link db" href="http://www.w3.org/TR/html-markup/h6.html">HTML Spec h6</a></li>
+        </ul>
+      </section>
+    </main>
+    <footer class="pam">
+      <p>Built by <a class="link b dim" href="http://www.github.com/sndsgn">@sndsgn</a></p>
+    </footer>
+  </body>
+</html>
