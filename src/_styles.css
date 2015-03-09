@@ -6,3 +6,9 @@
 
 */
 
+.outline h1,
+.outline h2,
+.outline h3,
+.outline h4,
+.outline h5,
+.outline h6 { background-color: #c7ffff; }

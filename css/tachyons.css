@@ -1365,7 +1365,7 @@ input[type="password"]:after,
 
 .btn:hover {
   color: #7FDBFF;
-  border: 1px solid #7FDBFF;
+  border: 1px solid;
   transition: background-color .3s, color .3s, border .3s;
 }
 
@@ -5203,6 +5203,14 @@ img {
   transition: opacity .15s ease-out;
 }
 
+.bg-primary-light {
+  background-color: #b8f8ff;
+}
+
+.bg-primary-lightest {
+  background-color: #ceffff;
+}
+
 /* SVG Fills */
 
 .fill-black {
@@ -7773,10 +7781,13 @@ img {
 }
 
 .f4 {
+  font-size: 1.25rem;
+}
+
+.f5 {
   font-size: 1rem;
 }
 
-.f5,
 .small {
   font-size: .85rem;
 }
@@ -7799,10 +7810,14 @@ img {
   }
 
   .f4-ns {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   .f5-ns {
+    font-size: 1rem;
+  }
+
+  .small-ns {
     font-size: .85rem;
   }
 }
@@ -7825,10 +7840,14 @@ img {
   }
 
   .f4-m {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   .f5-m {
+    font-size: 1rem;
+  }
+
+  .small-m {
     font-size: .85rem;
   }
 }
@@ -7851,10 +7870,14 @@ img {
   }
 
   .f4-l {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   .f5-l {
+    font-size: 1rem;
+  }
+
+  .small-l {
     font-size: .85rem;
   }
 }
@@ -8002,6 +8025,15 @@ img {
   Add custom styles here.
 
 */
+
+.outline h1,
+.outline h2,
+.outline h3,
+.outline h4,
+.outline h5,
+.outline h6 {
+  background-color: #c7ffff;
+}
 
 /*
    VERTICAL ALIGN

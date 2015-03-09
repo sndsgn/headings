@@ -347,4 +347,5 @@
 .dim:active,
 .dim:focus { opacity: .8; transition: opacity .15s ease-out; }
 
-
+.bg-primary-light { background-color: #b8f8ff; }
+.bg-primary-lightest { background-color: #ceffff; }

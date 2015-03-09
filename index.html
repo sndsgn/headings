@@ -4,60 +4,124 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>
-      HEADINGS!
+      HEADINGS! - A primer on h1-h6
     </title>
     <meta name="author" content="@sndsgns">
     <meta name="description" content="Simple CSS">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/tachyons.min.css">
-    <style type="text/css" media="screen">
-      .outline h1,
-      .outline h2,
-      .outline h3,
-      .outline h4,
-      .outline h5,
-      .outline h6 { outline: 1px solid gold; }
-    </style>
   </head>
-  <body class="wi-100">
+  <body class="wi-100 bg-primary-lightest">
     <header  style="background-image: linear-gradient(180deg, #B8F8FF,
-      #B8FFF3);" class="black-80 pvx">
+      #B8FFF3);" class="black-80 pvx pvxl-l bg-white phs">
       <h1 class="f2 mega-ns center tc mbxs mtn">HEADINGS</h1>
-      <h2 class="tc book f4 f3-l">Default stylings for HTML headings.</h2>
-    </header>
-    <main class="pam">
-      <div class="outline">
-        <h1>Default h1 size 2em</h1>
-        <h2>Default h2 size 1.5em</h2>
-        <h3>Default h3 size 1.17em</h3>
-        <h4>Default h4 size 1em</h4>
-        <h5>Default h5 size .83em</h5>
-        <h6>Default h6 size .67em</h6>
+      <h2 class="tc book f5 f4-ns ttu">A Quick Reference on Default stylings for h1-h6 elements</h2>
+      <div class="tc pvm">
+        <a href="https://twitter.com/share"
+         class="twitter-share-button"
+          data-text="A quick guide to default styles for html headings"
+          data-via="sndsgn" data-size="large">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
       </div>
-      <h1>Nested &lt;h1&gt; elements</h1>
-      <section class="outline">
-        <p class="mw6 lh-copy" style="outline:0;">
-          If an h1 has a parent element of aside, article, aside, or section,
-          it will change the default font-size as shown below. Starts at 2em and
-          steps down to .67em.
-        </p>
-        <h1>Default h1 style nested once 1.5em</h1>
-        <section>
-          <h1>Default h1 style nested twice 1.17em</h1>
+    </header>
+    <main class="phm bg-white">
+      <div class="cf center mw8">
+        <h1 class="f3 f2-ns fl wi-100 tc mbx mtx">Type and margin settings</h1>
+        <div class="wi-100 wi-50-ns fl-ns prn prl-ns">
+          <h1 class="f4">Defaults for h1-h6 elements</h1>
+          <p class="mw6 lh-copy">
+            The HTML spec provides information about the default styles for the
+            heading elements. Find below, a visual reference of the default
+            font-sizes and margins for each heading element. The default
+            type-scale starts at 2em and steps down to .67em.
+            The background color on each heading is to help visualize the margins between elements.
+          </p>
+          <div class="outline">
+            <h1>
+              <small class="book f5 db">font-size: 2em</small>
+              Default h1 size</h1>
+            <h2>
+              <small class="book f5 db">font-size: 1.5em</small>
+              Default h2 size</h2>
+            <h3>
+              <small class="book f5 db">font-size: 1.17em</small>
+              Default h3 size</h3>
+            <h4>
+              <small class="book f5 db">font-size: 1em</small>
+              Default h4 size</h4>
+            <h5>
+              <small class="book f5 db">font-size: .83em</small>
+              Default h5 size</h5>
+            <h6>
+              <small class="book f5 db">font-size: .67em</small>
+              Default h6 size</h6>
+          </div>
+        </div>
+        <div class="wi-100 wi-50-ns fl-ns pln pll-ns">
+          <h1 class="f4">Defaults for nested &lt;h1&gt; elements</h1>
+          <p class="mw6 lh-copy">
+            If an <code>h1</code> has a parent element of <code>aside</code>,
+            <code>article</code>, <code>aside</code>, or <code>section</code>,
+            it will change the default font-size and margin as shown below. Just like the
+            default heading type-scale, these sizes start at 2em and
+            step down to .67em with the margins starting at .67em and step up
+            to 2.3em.
+          </p>
+          <div class="outline">
+            <h1>
+              <small class="f5 db book">font-size: 2em</small>
+              Default h1
+            </h1>
+          </div>
+          <section class="outline">
+            <h1>
+              <small class="book f5 db">font-size: 1.5em</small>
+              Default h1 style nested once</h1>
             <section>
-              <h1>Default h1 style nested thrice 1em</h1>
+              <h1>
+                <small class="book f5 db">font-size: 1.17em</small>
+                Default h1 style nested twice</h1>
+              <section>
+                <h1>
+                  <small class="book f5 db">font-size: 1em</small>
+                  Default h1 style nested thrice</h1>
                 <section>
-                  <h1>Default h1 style nested four times .83em</h1>
-                    <section>
-                      <h1>Default h1 style nested five times .67em</h1>
-                    </section>
+                  <h1>
+                    <small class="book f5 db">font-size: .83em</small>
+                    Default h1 style nested four times</h1>
+                  <section>
+                    <h1>
+                      <small class="book f5 db">font-size: .67em</small>
+                      Default h1 style nested five times</h1>
+                  </section>
                 </section>
+              </section>
             </section>
-        </section>
-      </section>
-      <section class="pvm">
-        <h1>h1</h1>
+          </section>
+        </div>
+      </div>
+      <section class="mw7 center bt b--light-gray mtx">
+      <h1 class="tl f3 f2-ns wi-100 mtx">Shared Styles</h1>
+      <p class="f5 f4-ns wi-100 tl mbn lh-copy">Note that the below styles are
+shared by headings h1-h6. Since they default to display: block, that also means
+they will default to have a width that is 100% of their parent element.</p>
+<div class="bg-near-white pvm mvl phm phl-ns">
+<pre class="pvm dib br2 tl mtn">
+<code class="small f5-ns">
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  margin-start: 0;
+  margin-end: 0;
+  font-weight: bold;
+}
+</code>
+</pre>
+</div>
+      <h1 class="f3 f2-ns wi-100 tl mtx ptx">All Styles</h1>
+      <p class="f5 f4-ns wi-100 tl mw7 lh-copy">Note that these are the typical defaults for
+heading elements recommended for browsers by the html spec.</p>
+<div class="bg-near-white pvm mvl phm phl-ns small f5-ns">
 <pre>
 <code>
 h1 {
@@ -71,7 +135,6 @@ h1 {
 }
 </code>
 </pre>
-<h1>h2</h1>
 <pre>
 <code>
 h2 {
@@ -85,7 +148,6 @@ h2 {
 }
 </code>
 </pre>
-<h1>h3</h1>
 <pre>
 <code>
 h3 {
@@ -99,7 +161,6 @@ h3 {
 }
 </code>
 </pre>
-<h1>h4</h1>
 <pre>
 <code>
 h4 {
@@ -112,7 +173,6 @@ h4 {
 }
 </code>
 </pre>
-<h1>h5</h1>
 <pre>
 <code>
 h5 {
@@ -126,7 +186,6 @@ h5 {
 }
 </code>
 </pre>
-<h1>h6</h1>
 <pre>
 <code>
 h6 {
@@ -140,21 +199,29 @@ h6 {
 }
 </code>
 </pre>
+</div>
       </section>
-      <section>
-        <h1>Reference:</h1>
-        <ul class="list mln pln">
-          <li><a class="link db" href="http://www.w3.org/TR/html-markup/h1.html">HTML Spec h1</a></li>
-          <li><a class="link db" href="http://www.w3.org/TR/html-markup/h2.html">HTML Spec h2</a></li>
-          <li><a class="link db" href="http://www.w3.org/TR/html-markup/h3.html">HTML Spec h3</a></li>
-          <li><a class="link db" href="http://www.w3.org/TR/html-markup/h4.html">HTML Spec h4</a></li>
-          <li><a class="link db" href="http://www.w3.org/TR/html-markup/h5.html">HTML Spec h5</a></li>
-          <li><a class="link db" href="http://www.w3.org/TR/html-markup/h6.html">HTML Spec h6</a></li>
+      <section class="mtx center mw7 ptm pbx">
+        <h1 class="f2">Reference</h1>
+        <p class="f4">Find additional references about html heading elements within the spec.</p>
+        <ul class="list mln pln lh-copy">
+          <li class="db"><a class="link b f4 db" href="http://www.w3.org/TR/html-markup/h1.html">HTML Spec h1</a></li>
+          <li class="db"><a class="link b f4 db" href="http://www.w3.org/TR/html-markup/h2.html">HTML Spec h2</a></li>
+          <li class="db"><a class="link b f4 db" href="http://www.w3.org/TR/html-markup/h3.html">HTML Spec h3</a></li>
+          <li class="db"><a class="link b f4 db" href="http://www.w3.org/TR/html-markup/h4.html">HTML Spec h4</a></li>
+          <li class="db"><a class="link b f4 db" href="http://www.w3.org/TR/html-markup/h5.html">HTML Spec h5</a></li>
+          <li class="db"><a class="link b f4 db" href="http://www.w3.org/TR/html-markup/h6.html">HTML Spec h6</a></li>
         </ul>
       </section>
     </main>
-    <footer class="pam">
-      <p>Built by <a class="link b dim" href="http://www.github.com/sndsgn">@sndsgn</a></p>
+    <footer class="mw7 center wi-100 ptl pbx mtl">
+      <ul class="pln tc black-70">
+        <li class="list pbm">Built by <a class="link b dim"
+            href="http://www.github.com/sndsgn">sndsgn</a> using <a
+            class="link dim" href="http://tachyons.io">tachyons</a></li>
+        <li class="list dib mrxs"><a class="link b dim phm pvs btn small db" href="http://www.github.com/sndsgn">GitHub</a></li>
+        <li class="list dib mlxs"><a class="link b dim phm pvs btn small db" href="http://www.twitter.com/sndsgns">Twitter</a></li>
+      </ul>
     </footer>
   </body>
 </html>
